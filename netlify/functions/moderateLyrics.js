@@ -1,4 +1,8 @@
 // netlify/functions/moderateLyrics.js
+headers: {
+  "Content-Type": "application/json",
+  "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
+}
 export async function handler(event) {
   const { lyrics } = JSON.parse(event.body || "{}");
   if (!lyrics) {
@@ -23,3 +27,4 @@ export async function handler(event) {
     body: JSON.stringify(data)
   };
 }
+
