@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Explicit Lyrics Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎵 Explicit Lyrics Checker</h1>
+  
+  <!-- Search bar -->
+  <input type="text" id="search" placeholder="Search for a song..." />
+  <ul id="results"></ul>
+  
+  <!-- Output -->
+  <div id="output"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
